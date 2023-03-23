@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ClickPedidosActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardClickPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:backgroundTint="#FFF"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/Prato"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_baseline_fastfood"
+                app:layout_constraintEnd_toEndOf="@id/cardClickPedidos"
+                app:layout_constraintStart_toStartOf="@id/cardClickPedidos"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/black"
+                tools:ignore="ContentDescription" />
+
+
+            <LinearLayout
+                android:id="@+id/txtPedidoENumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/Prato"
+                app:layout_constraintStart_toStartOf="@id/Prato"
+                app:layout_constraintTop_toBottomOf="@id/Prato">
+
+                <TextView
+                    android:id="@+id/txtClickPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pedido n°"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtClickIDPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LayoutStatusPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/txtPedidoENumero"
+                app:layout_constraintStart_toStartOf="@id/txtPedidoENumero"
+                app:layout_constraintTop_toBottomOf="@id/txtPedidoENumero">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pedido "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtStatusPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="finalizado"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtFormaPagamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Valor do Pedido"
+                app:drawableStartCompat="@drawable/ic_baseline_arrow_right"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LayoutStatusPedido" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/dividerPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/txtFormaPagamento" />
+
+            <TextView
+
+                android:id="@+id/valorPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:text="0.00"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/txtFormaPagamento"
+                app:layout_constraintTop_toBottomOf="@+id/dividerPagamento" />
+
+            <TextView
+                android:id="@+id/txtDataPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Data do Pedido"
+                app:drawableStartCompat="@drawable/ic_baseline_arrow_right"
+                app:layout_constraintStart_toStartOf="@+id/txtFormaPagamento"
+                app:layout_constraintTop_toBottomOf="@id/valorPedido" />
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/dividerData"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                app:layout_constraintTop_toBottomOf="@id/txtDataPedido" />
+
+
+            <TextView
+                android:id="@+id/dataPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:padding="8dp"
+                android:text="22/09/2022 17:40"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/txtFormaPagamento"
+                app:layout_constraintTop_toBottomOf="@id/dividerData" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

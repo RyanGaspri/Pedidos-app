@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_Home"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Inicio" />
+    <item
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/ic_pedidos"
+        android:icon="@drawable/ic_baseline_pedidos"
+        android:title="Pedidos" />
+
+    <!--
+    <item
+        android:id="@+id/ic_perfil"
+        android:icon="@drawable/ic_baseline_perfil"
+        android:title="Perfil" /> -->
+</menu>

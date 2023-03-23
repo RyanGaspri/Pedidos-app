@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/semfundo"
+    android:backgroundTint="#7463410E"
+    tools:context=".PedidoRealizado">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintPedidoR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/redondo_layout"
+            android:backgroundTint="#FAFAFA"
+            android:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgSorriso"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="3dp"
+            android:scaleY="1"
+            android:src="@drawable/supermacacos"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintHeight_percent="0.32"
+            app:layout_constraintLeft_toLeftOf="@id/view"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Smileicon"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Obrigado por comprar!"
+            android:textColor="#1ABC21"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@id/imgSorriso"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:layout_margin="15dp"
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Seu pedido logo estará disponivel para retirada"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtCodPedido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent="0.78" />
+
+        <TextView
+            android:id="@+id/txtCodPedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="código do pedido:"
+            android:textAlignment="center"
+            android:textColor="#5E5E5E"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <TextView
+            android:id="@+id/num_pedido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="#001"
+            android:textAlignment="center"
+            android:textColor="#514C4C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/view2"
+            app:layout_constraintLeft_toLeftOf="@id/view2"
+            app:layout_constraintRight_toRightOf="@id/view2"
+            app:layout_constraintTop_toTopOf="@id/view2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/redondo_layout"
+            android:backgroundTint="#ffd200"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.95"
+            app:layout_constraintWidth_percent="0.66" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/returnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:elevation="1dp"
+        android:text="Voltar para o menu"
+        android:textColor="#5E5E5E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintPedidoR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

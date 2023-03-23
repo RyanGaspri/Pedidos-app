@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:title="Perfil">
+            <menu>
+                <item
+                    android:id="@+id/nav_menu_info"
+                    android:checked="true"
+                    android:icon="@drawable/ic_baseline_info"
+                    android:title="Informações da conta" />
+                <item
+                    android:id="@+id/nav_menu_settings"
+                    android:icon="@drawable/ic_baseline_settings"
+                    android:title="Configurações" />
+                <item
+                    android:id="@+id/nav_menu_exit"
+                    android:icon="@drawable/ic_baseline_exit_to_app"
+                    android:title="Sair"
+                    />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="Sobre o aplicativo">
+            <menu>
+                <item
+                    android:id="@+id/nav_menu_set_app"
+                    android:icon="@drawable/ic_baseline_settings_app"
+                    android:title="Configurações do app" />
+                <item
+                    android:id="@+id/nav_menu_sobre"
+                    android:icon="@drawable/ic_baseline_question_mark"
+                    android:title="Sobre o app" />
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CantinaToshio" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimaryDark">#ffd900</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="android:statusBarColor">@color/yellowapp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Light.CantinaToshio" parent="Theme.MaterialComponents.Light">>
+        <!-- Primary brand color. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">#ffd200</item>
+        <item name="colorPrimaryVariant">#bf8500</item>
+        <item name="colorOnPrimary">#fff</item>
+
+        <item name="colorSecondary">#000</item>
+        <item name="colorSecondaryVariant">#ccc</item>
+        <item name="colorOnSecondary">#fff</item>
+        <item name="android:statusBarColor">@color/yellowapp</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/yellowapp</item>
+    </style>
+
+    <style name="Theme.Sem_Barra" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">#ffd200</item>
+        <item name="colorPrimaryVariant">#bf8500</item>
+        <item name="colorOnPrimary">#fff</item>
+        <item name="android:statusBarColor">@color/yellowapp</item>
+        <item name="colorSecondary">#000</item>
+        <item name="colorSecondaryVariant">#ccc</item>
+        <item name="colorOnSecondary">#fff</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

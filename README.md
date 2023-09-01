@@ -8,3 +8,4 @@ um aplicativo de pedidos feito para um restaurante.
 - Arquitetura MVVM
 - Php (API)
 - Desingn patterns
+- MySQL
